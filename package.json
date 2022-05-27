@@ -1,0 +1,22 @@
+{
+  "name": "tz",
+  "version": "1.0.0",
+  "description": "tz",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimci621/tz.git"
+  },
+  "keywords": [
+    "tz"
+  ],
+  "author": "Amir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimci621/tz/issues"
+  },
+  "homepage": "https://github.com/kimci621/tz#readme"
+}
