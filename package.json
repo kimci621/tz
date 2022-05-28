@@ -1,7 +1,7 @@
 {
   "name": "tz",
   "version": "1.0.0",
-  "description": "tz",
+  "description": "TZ",
   "main": "index.js",
   "scripts": {
     "test": "test"
@@ -18,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/kimci621/tz/issues"
   },
-  "homepage": "https://github.com/kimci621/tz#readme"
+  "homepage": "https://github.com/kimci621/tz#readme",
+  "dependencies": {}
 }

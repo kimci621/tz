@@ -5,192 +5,255 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-  <link rel="stylesheet" href=".css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
 </head>
 
 <body>
+
+  <div id="modal-background"></div>
+  <div id="modal-content">
+    <button id="modal-close">Х</button>
+    <h3></h3>
+  </div>
+
   <div class="container">
 
     <header>
-      <div class="nav">
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Наши проекты</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Контакты</a></li>
+      <div class="nav ankor" data-ankor="home">
+        <img class="mobile" src="../assets/icons/menu.png"></i>
+        <ul class="mobile-menu">
+          <li data-to-ankor="home"><a href="#" class="p">Главная</a></li>
+          <li data-to-ankor="projects"><a href="#" class="p">Наши проекты</a></li>
+          <li data-to-ankor="services"><a href="#" class="p">Услуги</a></li>
+          <li data-to-ankor="news"><a href="#" class="p">Новости</a></li>
+          <li data-to-ankor="contacts"><a href="#" class="p">Контакты</a></li>
+        </ul>
+        <ul class="pc">
+          <li data-to-ankor="home"><a href="#" class="p">Главная</a></li>
+          <li data-to-ankor="projects"><a href="#" class="p">Наши проекты</a></li>
+          <li data-to-ankor="services"><a href="#" class="p">Услуги</a></li>
+          <li data-to-ankor="news"><a href="#" class="p">Новости</a></li>
+          <li data-to-ankor="contacts"><a href="#" class="p">Контакты</a></li>
         </ul>
       </div>
 
       <div class="header--text">
-        <h4>Передовая IT студия</h4>
-        <h5>Мы создаем легкие решения
-          сложных задач и проблем</h5>
-        <a href="#" class="btn">Наши проекты</a>
+        <h3 class="p">Передовая IT студия</h3>
+        <h1>Мы создаем легкие решения
+          сложных задач и проблем</h1>
+        <a href="#" class="btn-link">Наши проекты</a>
       </div>
     </header>
 
-    <div class="mobile-apps">
 
-      <h2 class="mobile-apps--tittle">Мы создаем мобильные приложения
-        для крупных корпораций
-      </h2>
+    <div class="wrapper">
+      <div id="mobile-apps" class="ankor" data-ankor="services">
 
-      <div class="mobile-apps--text">
-        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-        "рыбой" для текстов на латинице с начала XVI века.
+        <h2>Мы создаем мобильные приложения
+          для крупных корпораций
+          <p>
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+          </p>
+        </h2>
+
+        <ul>
+          <li class="hideElem hide">
+            <h3>Создание сайтов<p>Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+            </h3>
+          </li>
+          <li class="hideElem hide">
+            <h3>Создание сайтов<p>Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+            </h3>
+          </li>
+          <li class="hideElem hide">
+            <h3>Создание сайтов<p>Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+            </h3>
+          </li>
+        </ul>
+
+        <a href="#" class="btn-link">Все услуги</a>
+
       </div>
 
-      <ul>
-        <li>Создание сайтов</li>
-        <li>Создание сайтов</li>
-        <li>Создание сайтов</li>
-      </ul>
+      <div id="standarts" class="ankor" data-ankor="projects">
+        <div class="standarts--info">
+          <div class="standarts--info--text">
 
-      <button type="button" class="btn">Все услуги</button>
+            <h2>
+              Высокие стандарты разработки
+              <p>
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                стандартной "рыбой" для текстов на латинице с начала XVI века. стандартной "рыбой" для текстов на
+                латинице
+                с начала XVI века.
+              </p>
+            </h2>
 
-    </div>
 
+            <a href="#">Подробнее о компании</a>
 
-    <div class="standarts">
-      <div class="standarts--info">
-        <div class="standarts--info--text">
-
-          <h2 class="tittle">
-            Высокие стандарты разработки
-          </h2>
-
-          <div class="text">
-
-            <span>
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-              стандартной "рыбой" для текстов на латинице с начала XVI века. стандартной "рыбой" для текстов на латинице
-              с начала XVI века.
-            </span>
-
-            <a href="#" class="text--link">Подробнее о компании</a>
 
           </div>
 
+          <img class="standarts--info--img" src="../assets/img/laptop.png" alt="standarts-image"></img>
         </div>
-
-        <img class="standarts--info--img" src="./assets/img/standarts-img.jpg" alt="standarts-image"></img>
 
         <hr />
 
         <ul>
-          <li>125</li>
-          <li>125</li>
-          <li>125</li>
-          <li>125</li>
-          <li>125</li>
+          <li>
+            <h2>125<p>Our projects</p>
+            </h2>
+          </li>
+          <li>
+            <h2>125<p>Our projects</p>
+            </h2>
+          </li>
+          <li>
+            <h2>125<p>Our projects</p>
+            </h2>
+          </li>
+          <li>
+            <h2>125<p>Our projects</p>
+            </h2>
+          </li>
+          <li>
+            <h2>125<p>Our projects</p>
+            </h2>
+          </li>
         </ul>
-
       </div>
 
+      <div id="projects">
+
+        <h2>
+          Наши проекты
+          <p>
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+            Lorem
+            Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+
+          </p>
+        </h2>
+
+        <div class="slider-wrapper">
+          <div class="slider-container">
+            <div class="slider-track">
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+              <img src="../assets/img/slider--tem.jpg" alt="slider-image" class="slider-item"></img>
+            </div>
+          </div>
+          <div class="prev"></div>
+          <div class="next"></div>
+          <div class="dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div id="form-mailing">
+
+          <h3>
+            Подпишитесь на нашу рассылку
+          </h3>
+
+          <h2>
+            <p>Полезные статьи, акции, новости - получите все это сейчас!</p>
+          </h2>
+
+          <form class="form-mailing--form ankor" data-ankor="news">
+            <input type="text" placeholder="Ваш e-mail" class="input-email">
+            <button type="submit" class="btn-link btn-email">Подписаться</button>
+          </form>
+
+          <div class="form-mailing--text--bottom">
+            Мы не шлем спам, и передаем никому ваши данные.
+          </div>
+
+        </div>
+
+
+        <footer>
+
+          <div class="footer--info ankor" data-ankor="contacts">
+
+            <div class="footer--info--item contacts">
+              <h3>Контактная информация</h3>
+              <ul>
+                <li><a href="#">test@test.ru</a></li>
+                <li><a href="#">+8 777 555 66 99</a></li>
+                <li><a href="#">Москва, Бульвар Ленина 33</a></li>
+              </ul>
+            </div>
+
+            <div class="footer--info--item arrow">
+              <h3>Основные ссылки</h3>
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Наши проекты</a></li>
+                <li><a href="#">Наши услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+
+            <div class="footer--info--item arrow">
+              <h3>Наши проекты</h4>
+                <ul>
+                  <li><a href="#">РосНано</a></li>
+                  <li><a href="#">Сколково</a></li>
+                  <li><a href="#">Проект “Восток”</a></li>
+                  <li><a href="#">ТЭЦ Калининграда</a></li>
+                </ul>
+            </div>
+
+            <div class="footer--info--item arrow">
+              <h3>Социальные сети</h3>
+              <ul>
+                <li><a href="#">VK.com</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <hr />
+
+          <div class="footer--rights">
+            <h5>(с) 2019. Все права защищены.</h5>
+          </div>
+
+        </footer>
+      </div>
     </div>
 
-
-    <div id="pojects">
-
-      <h2 class="pojects-slider--tittle">
-        Наши проекты
-      </h2>
-
-      <div class="pojects-slider--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
-        Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-      </div>
-
-      <div class="my-slider">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-      </div>
-
-    </div>
-
-    <div class="form-mailing">
-
-      <h3 class="form-mailing--tittle">
-        Подпишитесь на нашу рассылку
-      </h3>
-
-      <div class="form-mailing--text">
-        Полезные статьи, акции, новости - получите все это сейчас!
-      </div>
-
-      <form class="form-mailing--form">
-        <input type="text" placeholder="Ваш e-mail">
-        <button type="submit">Подписаться</button>
-      </form>
-
-      <div class="form-mailing--text--bottom">
-        Мы не шлем спам, и передаем никому ваши данные.
-      </div>
-
-    </div>
-
-
-    <footer>
-
-      <div class="footer--info">
-
-        <div class="footer--info--contacts">
-          <h4>Контактная информация</h4>
-          <ul>
-            <li><a href="#">test@test.ru</a></li>
-            <li><a href="#">+8 777 555 66 99</a></li>
-            <li><a href="#">Москва, Бульвар Ленина 33</a></li>
-          </ul>
-        </div>
-
-        <div class="footer--info--links">
-          <h4>Основные ссылки</h4>
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Наши проекты</a></li>
-            <li><a href="#">Наши услуги</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </div>
-
-        <div class="footer--info--projects">
-          <h4>Наши проекты</h4>
-          <ul>
-            <li><a href="#">РосНано</a></li>
-            <li><a href="#">Сколково</a></li>
-            <li><a href="#">Проект “Восток”</a></li>
-            <li><a href="#">ТЭЦ Калининграда</a></li>
-          </ul>
-        </div>
-
-        <div class="footer--info--social">
-          <h4>Социальные сети</h4>
-          <ul>
-            <li><a href="#">VK.com</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <hr />
-
-      <div class="footer--right">
-        <h5>(с) 2019. Все права защищены.</h5>
-      </div>
-
-    </footer>
-
-
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-  <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
