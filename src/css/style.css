@@ -28,7 +28,7 @@ body {
 }
 /* header */
 header {
-  background-image: url("../../assets/img/header-bg.jpg");
+  background-image: url("./../assets/img/header-bg.jpg");
   height: 900px;
   width: 100%;
   left: 0px;
@@ -181,7 +181,7 @@ h3 p {
   margin-top: 12px;
 }
 #mobile-apps ul li::before {
-  content: url("../../assets/icons/project.svg");
+  content: url("./../assets/icons/project.svg");
   position: absolute;
   top: 0;
   left: -117px;
@@ -263,7 +263,7 @@ h3 p {
   height: 67px;
 }
 #standarts ul li::before {
-  content: url(../../assets/icons/standarts--icon.svg);
+  content: url(./../assets/icons/standarts--icon.svg);
   position: absolute;
   top: 12px;
   left: 0px;
@@ -388,7 +388,7 @@ footer .footer--info .footer--info--item ul li a {
   cursor: pointer;
 }
 footer .footer--info .footer--info--item.arrow ul li::before {
-  content: url("../../assets/icons/right-arrow.svg");
+  content: url("./../assets/icons/right-arrow.svg");
   position: absolute;
   left: -18px;
   top: 0;
@@ -396,7 +396,7 @@ footer .footer--info .footer--info--item.arrow ul li::before {
   height: 8.97px;
 }
 footer .footer--info .footer--info--item.contacts ul li:nth-child(1)::before {
-  content: url("../../assets/icons/mail.svg");
+  content: url("./../assets/icons/mail.svg");
   position: absolute;
   left: -26px;
   top: 0;
@@ -404,7 +404,7 @@ footer .footer--info .footer--info--item.contacts ul li:nth-child(1)::before {
   height: 8.97px;
 }
 footer .footer--info .footer--info--item.contacts ul li:nth-child(2)::before {
-  content: url("../../assets/icons/call.svg");
+  content: url("./../assets/icons/call.svg");
   position: absolute;
   left: -26px;
   top: 0;
@@ -412,7 +412,7 @@ footer .footer--info .footer--info--item.contacts ul li:nth-child(2)::before {
   height: 8.97px;
 }
 footer .footer--info .footer--info--item.contacts ul li:nth-child(3)::before {
-  content: url("../../assets/icons/geo.svg");
+  content: url("./../assets/icons/geo.svg");
   position: absolute;
   left: -26px;
   top: 0;
@@ -554,7 +554,7 @@ body.modal-open {
   position: absolute;
 }
 .slider-wrapper .prev::before {
-  content: url("../../assets/icons/right.svg");
+  content: url("./../assets/icons/right.svg");
   transform: translateY(-50%);
   position: absolute;
   cursor: pointer;
@@ -565,7 +565,7 @@ body.modal-open {
   position: absolute;
 }
 .slider-wrapper .next::before {
-  content: url("../../assets/icons/left.svg");
+  content: url("./../assets/icons/left.svg");
   transform: translateY(-50%);
   position: absolute;
   cursor: pointer;
