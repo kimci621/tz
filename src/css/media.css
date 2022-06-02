@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 250px !important;
+    width: 350px !important;
   }
   #mobile-apps ul li {
     margin-bottom: 40px;
@@ -83,6 +83,9 @@
     position: absolute;
     right: 0;
     top: 0;
+  }
+  .mobile-menu{
+    display: flex !important;
   }
   header .nav {
     display: flex;

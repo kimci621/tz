@@ -58,9 +58,11 @@ btnOff(true);
 
 linksOnPage.forEach(i =>
   i.addEventListener('click', (e) => {
-    e.preventDefault();
-    let data = i.getAttribute("data-to-ankor");
-    document.querySelector(`[data-ankor=${data}]`).scrollIntoView();
+    if (!e.target.parentNode.classList.contains('off')) {
+      e.preventDefault();
+      let data = i.getAttribute("data-to-ankor");
+      document.querySelector(`[data-ankor=${data}]`).scrollIntoView();
+    }
   })
 );
 
@@ -104,11 +106,15 @@ formBtn.addEventListener("click", (e) => {
 })
 // open/close mobile menu
 mobileMenuBtn.addEventListener('click', () => {
-  if (mobileMenu.style.display === 'flex') {
-    mobileMenu.style.display = 'none';
+  if (mobileMenu.classList.contains('off')) {
+    mobileMenu.classList.remove('off');
+    mobileMenu.classList.add('on');
   } else {
-    mobileMenu.style.display = 'flex';
+    mobileMenu.classList.remove('on');
+    mobileMenu.classList.add('off');
   }
+
+
 });
 
 // slider
