@@ -106,12 +106,12 @@ formBtn.addEventListener("click", (e) => {
 })
 // open/close mobile menu
 mobileMenuBtn.addEventListener('click', () => {
-  if (mobileMenu.classList.contains('off')) {
-    mobileMenu.classList.remove('off');
-    mobileMenu.classList.add('on');
-  } else {
+  if (mobileMenu.classList.contains('on')) {
     mobileMenu.classList.remove('on');
     mobileMenu.classList.add('off');
+  } else {
+    mobileMenu.classList.remove('off');
+    mobileMenu.classList.add('on');
   }
 
 
