@@ -12,6 +12,7 @@ let closeAll = [overlay, closemodalBtn]
 let email = {
   value: ''
 }
+let fakeData = [];
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -24,6 +25,21 @@ const observer = new IntersectionObserver(entries => {
     entry.target.classList.remove('show')
   })
 })
+
+const addToFakeData = (url, localData) => {
+  try {
+    fetch(url)
+      .then(response => response.json())
+      .then(json => {
+        if (Array.isArray(json)) {
+          localData = json.map(i => i);
+          console.log(localData)
+        }
+      })
+  } catch (e) {
+    console.error("Failed to fetch data");
+  }
+};
 
 
 const validateEmail = (email) => {
@@ -77,6 +93,8 @@ input.addEventListener('input', (e) => {
 })
 formBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  alert('Сделан Get запрос из https://jsonplaceholder.typicode.com/, результат выведен в консоль');
+  addToFakeData('https://jsonplaceholder.typicode.com/users', fakeData);
   modal.classList.add('active');
   overlay.classList.add('active');
   modalText.textContent = `Спасибо за подписку, ${email.value}`;
