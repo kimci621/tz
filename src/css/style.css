@@ -117,7 +117,6 @@ h3 p {
   color: #ffffff;
 }
 .header--text {
-  padding-top: 319px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -133,7 +132,6 @@ h3 p {
   color: #ffffff;
   max-width: 829px;
   width: 100%;
-  padding-top: 20px;
 }
 /* fonts end */
 
